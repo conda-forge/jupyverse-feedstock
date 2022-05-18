@@ -22,15 +22,15 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.8,<0.1.0
-    - fps-uvicorn <0.1.0
-    - fps-login >=0.0.32,<0.1.0
-    - fps-auth >=0.0.32,<0.1.0
-    - fps-contents >=0.0.32,<0.1.0
-    - fps-kernels >=0.0.32,<0.1.0
-    - fps-terminals >=0.0.32,<0.1.0
-    - fps-nbconvert >=0.0.32,<0.1.0
-    - fps-yjs >=0.0.32,<0.1.0
+    - fps <1
+    - fps-uvicorn <1
+    - fps-login <1
+    - fps-auth <1
+    - fps-contents <1
+    - fps-kernels <1
+    - fps-terminals <1
+    - fps-nbconvert <1
+    - fps-yjs <1
 
 test:
   commands:
