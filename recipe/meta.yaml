@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps >=0.0.19<1
+    - fps >=0.0.19,<1
     - fps-uvicorn >=0.0.19,<1
     - fps-contents <1
     - fps-kernels <1
