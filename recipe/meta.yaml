@@ -24,11 +24,11 @@ requirements:
     - python >=3.7
     - fps >=0.0.19,<1
     - fps-uvicorn >=0.0.19,<1
-    - fps-contents <1
-    - fps-kernels <1
-    - fps-terminals <1
-    - fps-nbconvert <1
-    - fps-yjs <1
+    - fps-contents >=0.0.37,<1
+    - fps-kernels >=0.0.37,<1
+    - fps-terminals >=0.0.37,<1
+    - fps-nbconvert >=0.0.37,<1
+    - fps-yjs >=0.0.37,<1
 
 test:
   commands:
