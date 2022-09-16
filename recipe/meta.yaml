@@ -1,5 +1,5 @@
 {% set name = "jupyverse" %}
-{% set version = "0.0.38" %}
+{% set version = "0.0.40" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2f8069af33a2d4f3ccacfa8f46855f19ee825324bcbfe92e4c152041f8e28b72
+  sha256: 3d554e5c425b4338b3168f278f9857c7ee6c8d675f284062e83e7497fb18aec1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - jupyverse = fps_uvicorn.cli:app
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
