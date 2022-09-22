@@ -26,6 +26,7 @@ requirements:
     - fastapi >=0.82.0,<1
     - fps >=0.0.19,<1
     - fps-uvicorn >=0.0.19,<1
+    - fps-auth-base <1
     - fps-contents >=0.0.37,<1
     - fps-kernels >=0.0.37,<1
     - fps-terminals >=0.0.37,<1
