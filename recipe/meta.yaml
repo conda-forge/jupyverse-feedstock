@@ -23,8 +23,8 @@ requirements:
     - hatchling
   run:
     - python >=3.7
-    - fastapi >=0.82.0,<1
-    - fps >=0.0.19,<1
+    - fastapi >=0.87.0,<1
+    - fps >=0.0.21,<1
     - fps-uvicorn >=0.0.19,<1
     - fps-auth-base <1
     - fps-contents >=0.0.37,<1
