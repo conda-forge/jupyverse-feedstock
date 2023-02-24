@@ -18,20 +18,20 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - hatchling
   run:
-    - python >=3.7
+    - python >=3.8
     - fastapi >=0.87.0,<1
     - fps >=0.0.21,<1
     - fps-uvicorn >=0.0.19,<1
-    - fps-auth-base <1
-    - fps-contents >=0.0.37,<1
-    - fps-kernels >=0.0.37,<1
-    - fps-terminals >=0.0.37,<1
-    - fps-nbconvert >=0.0.37,<1
-    - fps-yjs >=0.0.37,<1
+    - fps-auth-base >=0.0.50,<1
+    - fps-contents >=0.0.50,<1
+    - fps-kernels >=0.0.50,<1
+    - fps-terminals >=0.0.50,<1
+    - fps-nbconvert >=0.0.50,<1
+    - fps-yjs >=0.0.50,<1
 
 test:
   commands:
