@@ -1,11 +1,11 @@
-About jupyverse
-===============
+About jupyverse-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyverse-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyter-server/jupyverse
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyverse-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set of FPS plugins implementing a Jupyter server
 
