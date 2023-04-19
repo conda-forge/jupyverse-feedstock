@@ -21,28 +21,22 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - rich-click >=1.6.1,<2
-    - asphalt >=4.11.0,<5
-    - asphalt-web >=1.1.0,<2
-    - asgiref >=3.5,<4
-    - uvicorn >=0.17.6,<1
-    - fastapi >=0.95.0,<1
-    - fps-contents >=0.1.2,<1
-    - fps-kernels >=0.1.2,<1
-    - fps-terminals >=0.1.2,<1
-    - fps-nbconvert >=0.1.2,<1
-    - fps-yjs >=0.1.2,<1
-    - fps-lab >=0.1.2,<1
-    - fps-frontend >=0.1.2,<1
-    - jupyverse-api >=0.1.2,<1
+    - fps-contents >=0.1.4,<1
+    - fps-kernels >=0.1.4,<1
+    - fps-terminals >=0.1.4,<1
+    - fps-nbconvert >=0.1.4,<1
+    - fps-yjs >=0.1.4,<1
+    - fps-lab >=0.1.4,<1
+    - fps-frontend >=0.1.4,<1
+    - jupyverse-api >=0.1.4,<1
 
 test:
-  commands:
-    - jupyverse --help
+  imports:
+    - jupyverse
 
 about:
   home: https://github.com/jupyter-server/jupyverse
-  summary: A set of FPS plugins implementing a Jupyter server
+  summary: A set of Asphalt components implementing a Jupyter server
   keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse
   license_file: COPYING.md
