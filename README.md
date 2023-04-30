@@ -7,7 +7,7 @@ Home: https://github.com/jupyter-server/jupyverse
 
 Package license: BSD-3-Clause
 
-Summary: A set of FPS plugins implementing a Jupyter server
+Summary: A set of Asphalt components implementing a Jupyter server
 
 Development: https://github.com/jupyter-server/jupyverse
 
