@@ -11,6 +11,8 @@ Summary: A set of Asphalt components implementing a Jupyter server
 
 Development: https://github.com/jupyter-server/jupyverse
 
+Documentation: https://davidbrochart.github.io/jupyverse
+
 Current build status
 ====================
 
