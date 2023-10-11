@@ -1,5 +1,5 @@
 {% set name = "jupyverse" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48aa3b1b47f1e802915a153823b112b55896c5d1c934a88faa1bbbfa7de8c689
+  sha256: 75c0da9334d941a75789380ccbb03625510523066d626192af62cc71343da39a
 
 build:
   noarch: python
@@ -21,14 +21,14 @@ requirements:
     - hatchling
   run:
     - python >=3.8
-    - fps-contents >=0.1.9,<1
-    - fps-kernels >=0.1.9,<1
-    - fps-terminals >=0.1.9,<1
-    - fps-nbconvert >=0.1.9,<1
-    - fps-yjs >=0.1.9,<1
-    - fps-lab >=0.1.9,<1
-    - fps-frontend >=0.1.9,<1
-    - jupyverse-api >=0.1.9,<1
+    - fps-contents >=0.3.0,<1
+    - fps-kernels >=0.3.0,<1
+    - fps-terminals >=0.3.0,<1
+    - fps-nbconvert >=0.3.0,<1
+    - fps-yjs >=0.3.0,<1
+    - fps-lab >=0.3.0,<1
+    - fps-frontend >=0.3.0,<1
+    - jupyverse-api >=0.3.0,<1
 
 test:
   imports:
