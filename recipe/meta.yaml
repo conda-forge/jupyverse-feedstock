@@ -1,5 +1,5 @@
 {% set name = "jupyverse" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a447f0f564329197e9ab8599451057a4671e86a4a815079755c15345ca6a3133
+  sha256: 951529086e00f1c395c0a23e6bd68dcb9f1cabb580438a5d85e7d5737f744999
 
 build:
   noarch: python
@@ -21,14 +21,14 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - fps-contents >=0.3.0,<1
-    - fps-kernels >=0.3.0,<1
-    - fps-terminals >=0.3.0,<1
-    - fps-nbconvert >=0.3.0,<1
-    - fps-yjs >=0.3.0,<1
-    - fps-lab >=0.3.0,<1
-    - fps-frontend >=0.3.0,<1
-    - jupyverse-api >=0.3.0,<1
+    - fps-contents >=0.7.1,<1
+    - fps-kernels >=0.7.1,<1
+    - fps-terminals >=0.7.1,<1
+    - fps-nbconvert >=0.7.1,<1
+    - fps-yjs >=0.7.1,<1
+    - fps-lab >=0.7.1,<1
+    - fps-frontend >=0.7.1,<1
+    - jupyverse-api >=0.7.1,<1
 
 test:
   requires:
@@ -38,7 +38,7 @@ test:
 
 about:
   home: https://github.com/jupyter-server/jupyverse
-  summary: A set of Asphalt components implementing a Jupyter server
+  summary: A set of FPS modules implementing a Jupyter server
   keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse
   doc_url: https://davidbrochart.github.io/jupyverse
