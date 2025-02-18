@@ -21,14 +21,14 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - fps-contents >=0.7.2,<1
-    - fps-kernels >=0.7.2,<1
-    - fps-terminals >=0.7.2,<1
-    - fps-nbconvert >=0.7.2,<1
-    - fps-yjs >=0.7.2,<1
-    - fps-lab >=0.7.2,<1
-    - fps-frontend >=0.7.2,<1
-    - jupyverse-api >=0.7.2,<1
+    - fps-contents >=0.7.4,<1
+    - fps-kernels >=0.7.4,<1
+    - fps-terminals >=0.7.4,<1
+    - fps-nbconvert >=0.7.4,<1
+    - fps-yjs >=0.7.4,<1
+    - fps-lab >=0.7.4,<1
+    - fps-frontend >=0.7.4,<1
+    - jupyverse-api >=0.7.4,<1
 
 test:
   requires:
