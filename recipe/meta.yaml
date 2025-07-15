@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -32,7 +32,7 @@ requirements:
     - fps-frontend >=0.9.0,<0.10.0
     - jupyverse-api >=0.10.0,<0.11.0
     - rich-click >=1.6.1,<2
-    - fastapi
+    - fastapi-core
     - anycorn >=0.18.1,<0.19.0
     - watchfiles >=1.0.4,<2.0.0
 
