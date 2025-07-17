@@ -27,7 +27,7 @@ requirements:
     - fps-kernels >=0.9.1,<0.10.0
     - fps-terminals >=0.9.0,<0.10.0
     - fps-nbconvert >=0.9.0,<0.10.0
-    - fps-yjs >=0.10.0,<0.11.0
+    - fps-yjs >=0.10.1,<0.11.0
     - fps-lab >=0.9.0,<0.10.0
     - fps-frontend >=0.9.0,<0.10.0
     - jupyverse-api >=0.10.0,<0.11.0
