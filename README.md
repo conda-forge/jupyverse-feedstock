@@ -11,7 +11,7 @@ Summary: A set of FPS modules implementing a Jupyter server
 
 Development: https://github.com/jupyter-server/jupyverse
 
-Documentation: https://davidbrochart.github.io/jupyverse
+Documentation: https://jupyter-server.github.io/jupyverse
 
 Current build status
 ====================
