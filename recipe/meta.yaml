@@ -1,5 +1,5 @@
 {% set name = "jupyverse" %}
-{% set version = "0.10.12" %}
+{% set version = "0.10.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 518c81eee1fa97dc3fd98d893c9af23e8abebb62b5cb6ac1b97c8aec6b33c79d
+  sha256: 1cd35bd5cc70b920f28dd2775b7a01189dbea0c0fc2ab52e3ffeda79e09f26ed
 
 build:
   noarch: python
@@ -26,13 +26,13 @@ requirements:
     - fps-file-id >=0.3.2,<0.4.0
     - fps-file-watcher >=0.1.1,<0.2.0
     - fps-kernel-subprocess >=0.1.2,<0.2.0
-    - fps-kernels >=0.10.2,<0.11.0
+    - fps-kernels >=0.10.3,<0.11.0
     - fps-terminals >=0.9.1,<0.10.0
     - fps-nbconvert >=0.9.1,<0.10.0
-    - fps-yjs >=0.10.5,<0.11.0
+    - fps-yjs >=0.11.0,<0.12.0
     - fps-lab >=0.9.1,<0.10.0
     - fps-frontend >=0.9.1,<0.10.0
-    - jupyverse-api >=0.11.2,<0.12.0
+    - jupyverse-api >=0.11.3,<0.12.0
     - rich-click >=1.6.1,<2
     - fastapi-core
     - anycorn >=0.18.1,<0.19.0
