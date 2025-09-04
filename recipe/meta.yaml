@@ -41,11 +41,10 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-  commands:
-    - pip check
   imports:
     - jupyverse
   commands:
+    - pip check
     - jupyverse --help
 
 about:
