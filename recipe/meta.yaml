@@ -1,5 +1,5 @@
 {% set name = "jupyverse" %}
-{% set version = "0.12.0" %}
+{% set version = "0.14.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17a3051be0cfe039023b7e176654adffadcfb649d3dce57b0b3088f142fcae6e
+  sha256: bc730b9f52dffb9721f3aa7abd4b67f7ff13e96781f0fc82994ec3a56054cf4b
 
 build:
   noarch: python
@@ -21,22 +21,18 @@ requirements:
     - uv-build
   run:
     - python >={{ python_min }}
-    - fps >=0.5.9,<0.6.0
-    - fps-contents >=0.10.3,<0.11.0
-    - fps-file-id >=0.3.4,<0.4.0
-    - fps-file-watcher >=0.1.3,<0.2.0
-    - fps-kernel-subprocess >=0.1.5,<0.2.0
-    - fps-kernels >=0.10.5,<0.11.0
-    - fps-terminals >=0.9.3,<0.10.0
-    - fps-nbconvert >=0.9.3,<0.10.0
-    - fps-yjs >=0.12.0,<0.13.0
-    - fps-ystore-sqlite >=0.1.0,<0.2.0
-    - fps-lab >=0.10.2,<0.11.0
-    - fps-frontend >=0.9.3,<0.10.0
-    - jupyverse-api >=0.13.1,<0.14.0
+    - anycorn >=0.18.6,<0.19.0
+    - fastapi-core >=0.136.0,<1.0.0
+    - fps >=0.6.3,<0.7.0
+    - fps-contents >=0.11.2,<0.12.0
+    - fps-file-watcher >=0.2.0,<0.3.0
+    - fps-kernel-subprocess >=0.2.2,<0.3.0
+    - fps-kernels >=0.11.3,<0.12.0
+    - fps-terminals >=0.10.0,<0.11.0
+    - fps-nbconvert >=0.10.0,<0.11.0
+    - fps-lab >=0.11.4,<0.12.0
+    - fps-frontend >=0.10.0,<0.11.0
     - rich-click >=1.6.1,<2
-    - fastapi-core
-    - anycorn >=0.18.1,<0.19.0
 
 test:
   requires:
