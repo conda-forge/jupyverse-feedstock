@@ -1,0 +1,62 @@
+schema_version: 1
+
+context:
+  version: "0.14.16"
+
+package:
+  name: jupyverse
+  version: ${{ version }}
+
+source:
+  - url: https://pypi.org/packages/source/j/jupyverse/jupyverse-${{ version }}.tar.gz
+    sha256: 0f6d684a0bdffb93b8e9fefb336f2623ca80224254718f4095289adf13dfd77b
+
+build:
+  noarch: python
+  number: 0
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - uv-build >=0.11.32,<0.12
+  run:
+    - python >=${{ python_min }}
+    - anycorn >=0.18.6,<0.19.0
+    - fastapi-core >=0.136.0,<1.0.0
+    - fps >=0.6.3,<0.7.0
+    - fps-contents >=0.11.4,<0.12.0
+    - fps-file-watcher >=0.2.2,<0.3.0
+    - fps-kernel-subprocess >=0.2.4,<0.3.0
+    - fps-kernels >=0.11.5,<0.12.0
+    - fps-terminals >=0.10.2,<0.11.0
+    - fps-nbconvert >=0.10.2,<0.11.0
+    - fps-lab >=0.11.6,<0.12.0
+    - fps-frontend >=0.10.2,<0.11.0
+    - rich-click >=1.6.1,<2
+
+tests:
+  - python:
+      imports: jupyverse
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pip
+    script:
+      - jupyverse --help
+
+about:
+  homepage: https://github.com/jupyter-server/jupyverse
+  summary: A set of FPS modules implementing a Jupyter server
+  license_file: COPYING.md
+  license: BSD-3-Clause
+
+extra:
+  recipe-maintainers:
+    - davidbrochart
