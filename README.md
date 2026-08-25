@@ -9,10 +9,6 @@ Package license: BSD-3-Clause
 
 Summary: A set of FPS modules implementing a Jupyter server
 
-Development: https://github.com/jupyter-server/jupyverse
-
-Documentation: https://jupyter-server.github.io/jupyverse
-
 Current build status
 ====================
 
