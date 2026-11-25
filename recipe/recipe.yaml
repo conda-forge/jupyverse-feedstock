@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.14.20"
+  version: "0.14.21"
 
 package:
   name: jupyverse
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyverse/jupyverse-${{ version }}.tar.gz
-    sha256: b1d11cb06662995ee05d3d7ca8c613013059be6a287e57d20a7cbc56fdea817e
+    sha256: be34723b9561528aa157e97a76eb153f3c9206a565903bf75af0c5b22390f872
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - anycorn >=0.19.0,<0.21.0
     - fastapi-core >=0.136.0,<1.0.0
     - fps >=0.6.3,<0.7.0
-    - fps-contents >=0.11.5,<0.12.0
+    - fps-contents >=0.11.6,<0.12.0
     - fps-file-watcher >=0.2.2,<0.3.0
     - fps-kernel-subprocess >=0.2.6,<0.3.0
     - fps-kernels >=0.11.6,<0.12.0
